@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 90vh;
+    color: #333;
+}
+
+#app {
+    background-color: #ffffff;
+    padding: 35px 30px;
+    margin-top: 60px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 550px;
+    transition: all 0.3s ease;
+}
+
+#app:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ✨ Judul Stylish */
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 35px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 12px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+    outline: none;
+}
+
+/* Radio Buttons */
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #667eea;
+}
+
+/* Output Box */
+.output {
+    margin-top: 35px;
+    padding: 20px;
+    background-color: #eef4ff;
+    border-left: 5px solid #667eea;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.6;
+}
